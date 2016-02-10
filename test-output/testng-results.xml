@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="151184" started-at="2016-02-04T19:39:11Z" finished-at="2016-02-04T19:41:42Z">
+  <suite name="Default suite" duration-ms="42526" started-at="2016-02-10T15:27:18Z" finished-at="2016-02-10T15:28:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="151184" started-at="2016-02-04T19:39:11Z" finished-at="2016-02-04T19:41:42Z">
-      <class name="testRunner.LoginTrue">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testRunner.LoginTrue@1ad8ce8f]" name="setUp" is-config="true" duration-ms="29011" started-at="2016-02-04T16:39:11Z" finished-at="2016-02-04T16:39:40Z">
+    <test name="Default test" duration-ms="42526" started-at="2016-02-10T15:27:18Z" finished-at="2016-02-10T15:28:01Z">
+      <class name="testRunner.LoginTrues">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testRunner.LoginTrues@318c6fd4]" name="setUp" is-config="true" duration-ms="10546" started-at="2016-02-10T12:27:18Z" finished-at="2016-02-10T12:27:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="Login()[pri:0, instance:testRunner.LoginTrue@1ad8ce8f]" name="Login" duration-ms="121454" started-at="2016-02-04T16:39:40Z" finished-at="2016-02-04T16:41:42Z">
+        <test-method status="FAIL" signature="testLoginTrue()[pri:0, instance:testRunner.LoginTrues@318c6fd4]" name="testLoginTrue" duration-ms="31416" started-at="2016-02-10T12:27:29Z" finished-at="2016-02-10T12:28:00Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"name","selector":"txtUsuario"}
-Command duration or timeout: 60.12 seconds
+              <![CDATA[Unable to locate element: {"method":"id","selector":"txtUsuario"}
+Command duration or timeout: 30.62 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.50.1', revision: 'd7fc91b29de65b790abb01f3ac5f7ea2191c88a7', time: '2016-01-29 11:11:26'
 System info: host: 'DESKTOP-PMOMTNG', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
-*** Element info: {Using=name, value=txtUsuario}
-Session ID: e102593d-b2cd-4b44-8bb9-539978cd5201
+*** Element info: {Using=id, value=txtUsuario}
+Session ID: f739b333-ec03-4303-b6ef-9526f2e83bdf
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=44.0}]]]>
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=44.0.1}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"name","selector":"txtUsuario"}
-Command duration or timeout: 60.12 seconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"txtUsuario"}
+Command duration or timeout: 30.62 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.50.1', revision: 'd7fc91b29de65b790abb01f3ac5f7ea2191c88a7', time: '2016-01-29 11:11:26'
 System info: host: 'DESKTOP-PMOMTNG', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
-*** Element info: {Using=name, value=txtUsuario}
-Session ID: e102593d-b2cd-4b44-8bb9-539978cd5201
+*** Element info: {Using=id, value=txtUsuario}
+Session ID: f739b333-ec03-4303-b6ef-9526f2e83bdf
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=44.0}]
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=44.0.1}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -42,15 +42,10 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy6.clear(Unknown Source)
-	at repoObjects.HomePage.LogInCRM(HomePage.java:30)
-	at testRunner.LoginTrue.Login(LoginTrue.java:32)
+	at testRunner.LoginTrues.testLoginTrue(LoginTrues.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -75,24 +70,24 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"name","selector":"txtUsuario"}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"txtUsuario"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.50.1', revision: 'd7fc91b29de65b790abb01f3ac5f7ea2191c88a7', time: '2016-01-29 11:11:26'
 System info: host: 'DESKTOP-PMOMTNG', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EA854~1.PER/AppData/Local/Temp/anonymous7311314586282481983webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10719)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/EA854~1.PER/AppData/Local/Temp/anonymous7311314586282481983webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/EA854~1.PER/AppData/Local/Temp/anonymous6047432828679943019webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10719)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/EA854~1.PER/AppData/Local/Temp/anonymous6047432828679943019webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testRunner.LoginTrue@1ad8ce8f]" name="tearDown" is-config="true" duration-ms="669" started-at="2016-02-04T16:41:42Z" finished-at="2016-02-04T16:41:42Z">
+        </test-method> <!-- testLoginTrue -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testRunner.LoginTrues@318c6fd4]" name="tearDown" is-config="true" duration-ms="539" started-at="2016-02-10T12:28:00Z" finished-at="2016-02-10T12:28:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testRunner.LoginTrue -->
+      </class> <!-- testRunner.LoginTrues -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -9,7 +9,7 @@ public class HomePage {
 
 	WebDriver wd; 
 	
-	@FindBy (how = How.ID_OR_NAME, using= "txtUsuario" )
+	@FindBy (how = How.ID_OR_NAME, using= "rfvUsuario" )
 	public static WebElement User;
 	
 	@FindBy (how = How.ID, using= "txtClave" )

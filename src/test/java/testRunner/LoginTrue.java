@@ -6,8 +6,10 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
+
 import repoObjects.HomePage;
 
 
@@ -27,8 +29,12 @@ public class LoginTrue {
     @Test
     public void Login() throws InterruptedException{
     	
+    	//wd.findElement(By.xpath("//form/table/tbody/tr[1]/td/table/tbody/tr/td/div[2]/div[3]/input[2]")).click();
+    	//wd.findElement(By.xpath("//form/table/tbody/tr[1]/td/table/tbody/tr/td/div[2]/div[3]/input[2]")).sendKeys("1018");
+    	
+    	
     	repoObjects.LogInCRM("1018", "7375");
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
         
     }
     @AfterMethod
