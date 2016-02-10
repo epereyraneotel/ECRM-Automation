@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testRunner.LoginTrues">
+      <class name="testRunner.LoginPlatform">
         <methods>
+          <include name="LoginFalse"/>
+          <include name="LoginTrue"/>
           <include name="setUp"/>
-          <include name="testLoginTrue"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- testRunner.LoginTrues -->
+      </class> <!-- testRunner.LoginPlatform -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

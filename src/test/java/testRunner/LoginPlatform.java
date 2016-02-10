@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.bcel.verifier.Verifier;
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -13,7 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 import repoObjects.HomePage;
 
 
-public class LoginTrue {
+public class LoginPlatform {
     FirefoxDriver wd;
     HomePage repoObjects;
     
@@ -23,20 +24,30 @@ public class LoginTrue {
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         wd.manage().window().maximize();
         repoObjects = PageFactory.initElements(wd, HomePage.class);
-        wd.get("http://192.168.4.121/ecrm/");
+        wd.get("http://192.168.5.4/ecrm/");
     }
        
-    @Test
-    public void Login() throws InterruptedException{
+    @Test(priority=1)
+    public void LoginTrue() throws InterruptedException{
     	
-    	//wd.findElement(By.xpath("//form/table/tbody/tr[1]/td/table/tbody/tr/td/div[2]/div[3]/input[2]")).click();
-    	//wd.findElement(By.xpath("//form/table/tbody/tr[1]/td/table/tbody/tr/td/div[2]/div[3]/input[2]")).sendKeys("1018");
+    	wd.switchTo().frame("main");
+    	repoObjects.LogInCRM("1000", "1122");
+    	Thread.sleep(3000);
     	
-    	
-    	repoObjects.LogInCRM("1018", "7375");
-        //Thread.sleep(3000);
-        
     }
+    
+    @Test (priority=2)
+    public void LoginFalse() throws InterruptedException{
+    	
+    	wd.switchTo().frame("main");
+    	repoObjects.LogInCRM("1013", "7375");
+    	Thread.sleep(3000);
+    	if (!wd.findElement(By.tagName("html")).getText().contains("Cliente, Usuario o Clave inválidos.")) {
+             System.out.println("verifyTextPresent failed");
+         }
+    	
+    }
+    
     @AfterMethod
     public void tearDown() {
         wd.quit();

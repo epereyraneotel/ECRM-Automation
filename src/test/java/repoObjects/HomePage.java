@@ -9,15 +9,17 @@ public class HomePage {
 
 	WebDriver wd; 
 	
-	@FindBy (how = How.ID_OR_NAME, using= "rfvUsuario" )
+	@FindBy (how = How.XPATH, using= "//form/table/tbody/tr/td/table/tbody/tr/td/div[2]/div/input[2]" )
 	public static WebElement User;
 	
 	@FindBy (how = How.ID, using= "txtClave" )
-	public static WebElement Pass;
+	public static WebElement Password;
 	
 	@FindBy (how = How.ID, using= "NeoIngresarButton1" )
 	public static WebElement ButtonLogin;
 	
+	@FindBy (how = How.ID, using= "cmdSalir" )
+	public static WebElement BtnLogOut;
 	
 	
 	public void Login(WebDriver driver){ 
@@ -27,11 +29,23 @@ public class HomePage {
 	    } 
 	
 	public void LogInCRM(String Users,String password ) {
-	    User.clear();
+	    
+		User.clear();
+		User.clear();
 	    User.sendKeys(Users);
-	    Pass.clear();
-	    Pass.sendKeys(password);
+	    
+	    Password.click();
+	    Password.clear();
+	    Password.sendKeys(password);
+	    
 	    ButtonLogin.click();
+	    
+	}
+	
+	public void LogOutCRM (){
+		
+		BtnLogOut.click();
+		
 	}
 	
 
