@@ -48,5 +48,18 @@ public class HomePage {
 		
 	}
 	
+	public void SwitchFrameTop(){
+		
+		wd.switchTo().defaultContent();
+    	wd.switchTo().frame("header");
+		
+	}
+	
+	public void SwitchFrameMain(){
+		
+		wd.switchTo().defaultContent();
+    	wd.switchTo().frame("header");
+		
+	}
 
 }

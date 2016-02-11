@@ -5,7 +5,7 @@
     <classes>
       <class name="testRunner.LoginPlatform">
         <methods>
-          <include name="LoginFalse"/>
+          <include name="tearDown"/>
           <include name="LoginTrue"/>
           <include name="setUp"/>
         </methods>
