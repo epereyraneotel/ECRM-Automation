@@ -1,3 +1,9 @@
+/* Crate by: Emanuel Pereyra
+ * Date: 02-11-2016
+ * Update by: -
+ * Date: -
+ * Summary: Repository of Objects with methods
+ */
 package repoObjects;
 
 import org.openqa.selenium.WebDriver;
@@ -32,6 +38,14 @@ public class TopFramePage {
 	
 	@FindBy (how = How.ID, using= "cmoIdioma" )
 	public static WebElement SelectIdioma;
+	
+	
+	public void Constructor(WebDriver driver){ 
+
+	    this.wd = driver; 
+
+	    } 
+	
 	
 	
 	

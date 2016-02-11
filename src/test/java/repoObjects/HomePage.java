@@ -5,11 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import com.thoughtworks.selenium.webdriven.commands.WaitForCondition;
+
 public class HomePage {
 
 	WebDriver wd; 
 	
-	@FindBy (how = How.XPATH, using= "//form/table/tbody/tr/td/table/tbody/tr/td/div[2]/div/input[2]" )
+	@FindBy (how = How.ID, using= "txtUsuario" )
 	public static WebElement User;
 	
 	@FindBy (how = How.ID, using= "txtClave" )
@@ -22,7 +24,8 @@ public class HomePage {
 	public static WebElement BtnLogOut;
 	
 	
-	public void Login(WebDriver driver){ 
+	
+	public void ConstructorLogin(WebDriver driver){ 
 
 	    this.wd = driver; 
 
@@ -61,5 +64,14 @@ public class HomePage {
     	wd.switchTo().frame("header");
 		
 	}
+	
+	
+	
+	
+	
+	
+	
+		
+	
 
 }

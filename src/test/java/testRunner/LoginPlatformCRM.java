@@ -1,3 +1,9 @@
+/* Crate by: Emanuel Pereyra
+ * Date: 02-11-2016
+ * Update by: -
+ * Date: -
+ * Summary: LogIns True parameters and Login with wrong parameters
+ */
 package testRunner;
 
 import org.testng.annotations.BeforeMethod;
@@ -14,7 +20,7 @@ import org.openqa.selenium.support.PageFactory;
 import repoObjects.HomePage;
 
 
-public class LoginPlatform {
+public class LoginPlatformCRM {
     FirefoxDriver wd;
     HomePage repoObjects;
     
@@ -57,8 +63,6 @@ public class LoginPlatform {
 
     	//Tiempo muerto de espera para carga
         Thread.sleep(13000);
-    	
-    	
     	
     }
     
