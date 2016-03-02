@@ -40,7 +40,7 @@ public class LoginPlatformCRM {
         repoObjects = PageFactory.initElements(wd, HomePage.class);
         
         //Url
-        wd.get("http://192.168.5.4/ecrm/");
+        wd.get("http://192.168.5.3/callcenter2005/");
     }
        
     @Test(priority=1)
@@ -56,13 +56,17 @@ public class LoginPlatformCRM {
     	Thread.sleep(3000);
     	
     	//Cambio de Frame
-    	repoObjects.SwitchFrameTop();
+    	wd.switchTo().defaultContent();
+    	wd.switchTo().frame("header");
+    	
+    	//Metodo de Lenguaje 
+    	repoObjects.SwitchLanguage();
     	
     	//Metodo para deslogeo
     	repoObjects.LogOutCRM();
 
     	//Tiempo muerto de espera para carga
-        Thread.sleep(13000);
+        Thread.sleep(3000);
     	
     }
     
