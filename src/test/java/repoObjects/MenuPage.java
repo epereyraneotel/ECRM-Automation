@@ -15,16 +15,6 @@ public class MenuPage {
 
 	WebDriver wd;
 	
-	@FindBy (how = How.XPATH, using = "//form/table/tbody/tr/td[1]/div[2]/table/tbody/tr/td/p/table/tbody/tr[6]/td/div")
-	public static WebElement  UsuariosGrupos;
-	
-	@FindBy (how = How.XPATH, using = "//form/div[9]/span/table/tbody/tr[1]/td/div" )
-	public static WebElement UsuariosGruposUsuarios;
-	
-	@FindBy (how = How.XPATH, using = "//form/div[10]/span/table/tbody/tr[2]/td/div" )
-	public static WebElement UsuariosGruposUsuariosTelemarketers;
-	
-	
 	
 	//ConfiguracionGeneral
 
@@ -147,8 +137,116 @@ public class MenuPage {
 	public static WebElement Gramatica;
 	
 	
+	//---------------------------------------------------------------------------------
+	//UsuarioGrupos
+	//---------------------------------------------------------------------------------
+	
+	@FindBy (how = How.XPATH, using = "//form/table/tbody/tr/td[1]/div[2]/table/tbody/tr/td/p/table/tbody/tr[6]/td/div")
+	public static WebElement  UsuariosGrupos;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[9]/span/table/tbody/tr[1]/td/div" )
+	public static WebElement UsuariosGruposUSUARIOS;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[10]/span/table/tbody/tr[2]/td/div" )
+	public static WebElement UsuariosGruposUSUARIOSTelemarketers;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[10]/span/table/tbody/tr[1]/td/div" )
+	public static WebElement UsuariosGruposUSUARIOSDirectos;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[9]/span/table/tbody/tr[2]/td/div")
+	public static WebElement UsuariosGruposGRUPOS;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[11]/span/table/tbody/tr[1]/td/div")
+	public static WebElement UsuariosGruposGRUPOSDirectos;
+
+	@FindBy (how = How.XPATH, using = "//form/div[11]/span/table/tbody/tr[2]/td/div")
+	public static WebElement UsuariosGruposGRUPOSTelemarketrs;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[9]/span/table/tbody/tr[3]/td/div")
+	public static WebElement UsuariosGruposPERFILES;
+	
+
+	//---------------------------------------------------------------------------------
+	//Calendarios,Colas & Arboles
+	//---------------------------------------------------------------------------------
+	
+	@FindBy (how = How.XPATH, using = "//form/table/tbody/tr/td[1]/div[2]/table/tbody/tr/td/p/table/tbody/tr[7]/td/div")
+	public static WebElement CalendariosColasArboles;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[12]/span/table/tbody/tr[1]/td/div")
+	public static WebElement CalendarioColasArbolesCALENDARIO;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[12]/span/table/tbody/tr[2]/td/div")
+	public static WebElement CalendarioColasArbolesCOLAS;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[12]/span/table/tbody/tr[3]/td/div")
+	public static WebElement CalendarioColasArbolesARBOLES;
 	
 	
+
+	//---------------------------------------------------------------------------------
+	//BolquesyBases
+	//---------------------------------------------------------------------------------
+	
+	@FindBy (how = How.XPATH, using = "//form/table/tbody/tr/td[1]/div[2]/table/tbody/tr/td/p/table/tbody/tr[8]/td/div")
+	public static WebElement BloquesBases;
+	
+
+	@FindBy (how = How.XPATH, using = "//form/div[13]/span/table/tbody/tr[1]/td/div")
+	public static WebElement BloquesBasesBloqueos;
+
+	@FindBy (how = How.XPATH, using = "//form/div[14]/span/table/tbody/tr[1]/td")
+	public static WebElement BloquesBasesBloqueosEntrantes;
+	
+
+	@FindBy (how = How.XPATH, using = "//form/div[14]/span/table/tbody/tr[2]/td/div")
+	public static WebElement BloquesBasesBloqueosSalientes;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[13]/span/table/tbody/tr[2]/td/div")
+	public static WebElement BloquesBasesBloqueosDB;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[15]/span/table/tbody/tr[1]/td/div")
+	public static WebElement BloquesBasesBloqueosDBInternas;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[15]/span/table/tbody/tr[2]/td/div")
+	public static WebElement BloquesBasesBloqueosDBExternas;
+	
+	//---------------------------------------------------------------------------------
+	//DNIsAplicaciones
+	//---------------------------------------------------------------------------------
+	
+	@FindBy (how = How.XPATH, using = "//form/table/tbody/tr/td[1]/div[2]/table/tbody/tr/td/p/table/tbody/tr[9]/td/div")
+	public static WebElement DNIsAplicaciones;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[16]/span/table/tbody/tr[1]/td/div")
+	public static WebElement DNIS;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[16]/span/table/tbody/tr[2]/td/div")
+	public static WebElement Aplicaciones;
+	
+	//---------------------------------------------------------------------------------
+	//Campañas
+	//---------------------------------------------------------------------------------
+	
+	@FindBy (how = How.XPATH, using = "//form/table/tbody/tr/td[1]/div[2]/table/tbody/tr/td/p/table/tbody/tr[10]/td/div")
+	public static WebElement Campañas;	
+	
+	@FindBy (how = How.XPATH, using = "//form/div[17]/span/table/tbody/tr[1]/td/div")
+	public static WebElement CampañasTelefonia;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[17]/span/table/tbody/tr[2]/td/div")
+	public static WebElement CampañasRedesSociales;
+	
+	@FindBy (how = How.XPATH, using = "//form/div[17]/span/table/tbody/tr[3]/td/div")
+	public static WebElement CampañaDepuracionDeCampaña;
+	
+	
+	//---------------------------------------------------------------------------------
+	//Reportes
+	//---------------------------------------------------------------------------------
+
+	@FindBy (how = How.XPATH, using = "//form/table/tbody/tr/td[1]/div[2]/table/tbody/tr/td/p/table/tbody/tr[11]/td/div")
+	public static WebElement Reportes;
 	
 	
 	
@@ -172,12 +270,20 @@ public class MenuPage {
 		
 		UsuariosGrupos.click();
 		
-		UsuariosGruposUsuarios.click();
+		UsuariosGruposUSUARIOS.click();
 		
-		UsuariosGruposUsuariosTelemarketers.click();
+		UsuariosGruposUSUARIOSTelemarketers.click();
 		
 
 	}
 	
+	public void SelectConfiguracionGeneralPlataforma (){
+		
+		ConfiguracionGeneral.click();
+		
+		GeneralPlataforma.click();
+		
+		
+	}
 
 }
